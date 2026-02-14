@@ -14,7 +14,7 @@ import {
     html,
 } from "../../base/web-components";
 import { KCUIElement } from "../../kc-ui";
-import kc_ui_styles from "../../kc-ui/kc-ui.css";
+import kc_ui_styles from "../../kc-ui/kc-ui.css.ts";
 import { Project } from "../project";
 import {
     FetchFileSystem,

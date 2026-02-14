@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+/*
+    Copyright (c) 2023 Alethea Katherine Flowers.
+    Published under the standard MIT License.
+    Full text available at: https://opensource.org/licenses/MIT
+*/
+
+const svg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
     xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
@@ -9,3 +15,6 @@
             d="M43.2,45.3L37.842,39.95C37.147,40.417 36.392,40.792 35.575,41.075C34.758,41.358 33.9,41.5 33,41.5C30.639,41.5 28.632,40.673 26.979,39.019C25.326,37.365 24.5,35.357 24.5,32.994C24.5,30.631 25.327,28.625 26.981,26.975C28.635,25.325 30.643,24.5 33.006,24.5C35.369,24.5 37.375,25.326 39.025,26.979C40.675,28.632 41.5,30.639 41.5,33C41.5,33.9 41.358,34.758 41.075,35.575C40.792,36.392 40.417,37.147 39.95,37.842L45.3,43.2L43.2,45.3ZM33,38.5C34.567,38.5 35.875,37.975 36.925,36.925C37.975,35.875 38.5,34.567 38.5,33C38.5,31.433 37.975,30.125 36.925,29.075C35.875,28.025 34.567,27.5 33,27.5C31.433,27.5 30.125,28.025 29.075,29.075C28.025,30.125 27.5,31.433 27.5,33C27.5,34.567 28.025,35.875 29.075,36.925C30.125,37.975 31.433,38.5 33,38.5Z" />
     </g>
 </svg>
+`;
+
+export default svg;

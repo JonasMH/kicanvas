@@ -17,8 +17,8 @@ import { FetchFileSystem, type VirtualFileSystem } from "../services/vfs";
 import { KCBoardAppElement } from "./kc-board/app";
 import { KCSchematicAppElement } from "./kc-schematic/app";
 
-import kc_ui_styles from "../../kc-ui/kc-ui.css";
-import shell_styles from "./kicanvas-shell.css";
+import kc_ui_styles from "../../kc-ui/kc-ui.css.ts";
+import shell_styles from "./kicanvas-shell.css.ts";
 
 import "../icons/sprites";
 import "./common/project-panel";

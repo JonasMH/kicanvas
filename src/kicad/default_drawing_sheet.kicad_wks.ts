@@ -1,4 +1,10 @@
-(kicad_wks (version 20210606) (generator pl_editor)
+/*
+    Copyright (c) 2023 Alethea Katherine Flowers.
+    Published under the standard MIT License.
+    Full text available at: https://opensource.org/licenses/MIT
+*/
+
+const sheet = `(kicad_wks (version 20210606) (generator pl_editor)
   (setup
     (textsize 1.5 1.5) (linewidth 0.15) (textlinewidth 0.15)
     (left_margin 10) (right_margin 10) (top_margin 10) (bottom_margin 10))
@@ -12,23 +18,26 @@
   (tbtext "A" (name "") (pos 1 25 ltcorner) (font (size 1.3 1.3)) (justify center) (repeat 100) (incry 50))
   (line (name "") (start 0 50 rtcorner) (end 2 50 rtcorner) (repeat 30) (incry 50))
   (tbtext "A" (name "") (pos 1 25 rtcorner) (font (size 1.3 1.3)) (justify center) (repeat 100) (incry 50))
-  (tbtext "Date: ${ISSUE_DATE}" (name "") (pos 87 6.9))
+  (tbtext "Date: \${ISSUE_DATE}" (name "") (pos 87 6.9))
   (line (name "") (start 110 5.5) (end 2 5.5))
-  (tbtext "${KICAD_VERSION}" (name "") (pos 109 4.1) (comment "KiCad version"))
+  (tbtext "\${KICAD_VERSION}" (name "") (pos 109 4.1) (comment "KiCad version"))
   (line (name "") (start 110 8.5) (end 2 8.5))
-  (tbtext "Rev: ${REVISION}" (name "") (pos 24 6.9) (font bold))
-  (tbtext "Size: ${PAPER}" (name "") (pos 109 6.9) (comment "Paper format name"))
-  (tbtext "Id: ${#}/${##}" (name "") (pos 24 4.1) (comment "Sheet id"))
+  (tbtext "Rev: \${REVISION}" (name "") (pos 24 6.9) (font bold))
+  (tbtext "Size: \${PAPER}" (name "") (pos 109 6.9) (comment "Paper format name"))
+  (tbtext "Id: \${#}/\${##}" (name "") (pos 24 4.1) (comment "Sheet id"))
   (line (name "") (start 110 12.5) (end 2 12.5))
-  (tbtext "Title: ${TITLE}" (name "") (pos 109 10.7) (font (size 2 2) bold italic))
-  (tbtext "File: ${FILENAME}" (name "") (pos 109 14.3))
+  (tbtext "Title: \${TITLE}" (name "") (pos 109 10.7) (font (size 2 2) bold italic))
+  (tbtext "File: \${FILENAME}" (name "") (pos 109 14.3))
   (line (name "") (start 110 18.5) (end 2 18.5))
-  (tbtext "Sheet: ${SHEETPATH}" (name "") (pos 109 17))
-  (tbtext "${COMPANY}" (name "") (pos 109 20) (font bold) (comment "Company name"))
-  (tbtext "${COMMENT1}" (name "") (pos 109 23) (comment "Comment 0"))
-  (tbtext "${COMMENT2}" (name "") (pos 109 26) (comment "Comment 1"))
-  (tbtext "${COMMENT3}" (name "") (pos 109 29) (comment "Comment 2"))
-  (tbtext "${COMMENT4}" (name "") (pos 109 32) (comment "Comment 3"))
+  (tbtext "Sheet: \${SHEETPATH}" (name "") (pos 109 17))
+  (tbtext "\${COMPANY}" (name "") (pos 109 20) (font bold) (comment "Company name"))
+  (tbtext "\${COMMENT1}" (name "") (pos 109 23) (comment "Comment 0"))
+  (tbtext "\${COMMENT2}" (name "") (pos 109 26) (comment "Comment 1"))
+  (tbtext "\${COMMENT3}" (name "") (pos 109 29) (comment "Comment 2"))
+  (tbtext "\${COMMENT4}" (name "") (pos 109 32) (comment "Comment 3"))
   (line (name "") (start 90 8.5) (end 90 5.5))
   (line (name "") (start 26 8.5) (end 26 2))
 )
+`;
+
+export default sheet;

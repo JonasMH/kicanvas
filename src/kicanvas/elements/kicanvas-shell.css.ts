@@ -1,4 +1,10 @@
-*,
+/*
+    Copyright (c) 2023 Alethea Katherine Flowers.
+    Published under the standard MIT License.
+    Full text available at: https://opensource.org/licenses/MIT
+*/
+
+const styles = `*,
 *::before,
 *::after {
     box-sizing: border-box;
@@ -145,3 +151,6 @@ kc-schematic-app {
     height: 100%;
     flex: 1;
 }
+`;
+
+export default styles;

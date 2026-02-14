@@ -3,10 +3,9 @@
     Published under the standard MIT License.
     Full text available at: https://opensource.org/licenses/MIT
 */
+declare var DEBUG: boolean | undefined;
 
-/* globals DEBUG */
-// @ts-expect-error: defined by esbuild
-if (DEBUG) {
+if (typeof DEBUG !== "undefined" && DEBUG) {
     new EventSource("/esbuild").addEventListener("change", () =>
         location.reload(),
     );

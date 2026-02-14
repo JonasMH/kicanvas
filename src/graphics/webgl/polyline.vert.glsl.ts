@@ -1,4 +1,10 @@
-#version 300 es
+/*
+    Copyright (c) 2023 Alethea Katherine Flowers.
+    Published under the standard MIT License.
+    Full text available at: https://opensource.org/licenses/MIT
+*/
+
+const shader = `#version 300 es
 
 uniform mat3 u_matrix;
 
@@ -31,3 +37,6 @@ void main() {
 
     v_color = a_color;
 }
+`;
+
+export default shader;

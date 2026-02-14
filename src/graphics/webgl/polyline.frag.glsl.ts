@@ -1,4 +1,10 @@
-#version 300 es
+/*
+    Copyright (c) 2023 Alethea Katherine Flowers.
+    Published under the standard MIT License.
+    Full text available at: https://opensource.org/licenses/MIT
+*/
+
+const shader = `#version 300 es
 
 precision highp float;
 
@@ -41,3 +47,6 @@ void main() {
 
     gl_FragDepth = u_depth;
 }
+`;
+
+export default shader;
