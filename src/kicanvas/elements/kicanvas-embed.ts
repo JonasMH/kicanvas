@@ -4,6 +4,22 @@
     Full text available at: https://opensource.org/licenses/MIT
 */
 
+export type KiCanvasEmbedAttributes = {
+    src?: string | null;
+    loading?: boolean;
+    loaded?: boolean;
+    controls?: "none" | "basic" | "full" | null;
+    controlslist?: string | null;
+    theme?: string | null;
+    zoom?: "objects" | "page" | string | null;
+    // Standard HTML attributes
+    class?: string;
+    className?: string;
+    style?: string | Record<string, string | number>;
+    id?: string;
+    children?: never;
+};
+
 import { later } from "../../base/async";
 import { Logger } from "../../base/log";
 import {

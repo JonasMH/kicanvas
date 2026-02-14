@@ -144,6 +144,39 @@ This example shows how to use `<kicanvas-source>` along with inline KiCad data. 
     </kicanvas-source>
 </kicanvas-embed>
 
+## React types
+
+To enable JSX types create or append to `src/types.d.ts`
+
+```ts
+import { KicanvasElements } from "kicanvas";
+
+declare global {
+    namespace React {
+        namespace JSX {
+            interface IntrinsicElements extends KicanvasElements {}
+        }
+    }
+}
+```
+
+This should make types in the following example (`main.tsx`):
+
+```tsx
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+
+import "kicanvas";
+
+createRoot(document.getElementById("root")!).render(
+    <StrictMode>
+        <kicanvas-embed
+            src="assets/example/led-board.kicad_sch"
+            controls={"full"}></kicanvas-embed>
+    </StrictMode>,
+);
+```
+
 ## Attributes
 
 !!! warning "Not yet implemented"

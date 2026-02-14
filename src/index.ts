@@ -7,3 +7,5 @@
 import "./base/livereload";
 import "./kicanvas/elements/kicanvas-shell";
 import "./kicanvas/elements/kicanvas-embed";
+export * from "./kicanvas";
+export * from "./elements";
